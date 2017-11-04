@@ -8,14 +8,17 @@ class App extends Component {
     super();
 
     this.state = {
-      todo: [],
+      todo: ["end the universe", "pick up drycleaning", "save morty from worldender"],
       done: []
     }
   }
+
+  // addiItem = ()
+
   render() {
     return (
       <div className="App">
-       My App
+        <ToDo items={this.state.todo}/>
       </div>
     );
   }
