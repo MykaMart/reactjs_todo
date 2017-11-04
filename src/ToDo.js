@@ -3,16 +3,18 @@ import AddItem from "./AddItem"
 
 class ToDo extends Component {
 
-	// moveItem = (e) => {
-	// 	this.
 
-	// }
+	moveItem = (e) => {
+		const state = this.state
+		this.props.move(e)
+		this.setState(state)
+	}
 
 
 	render () {
 
-		const listItems = this.props.items.map((item, i) => {
-			return <li key={i}>{item}<input type="checkbox"/></li>
+		const listItems = this.props.tItems.map((item, i) => {
+			return <li key={i} >{item}<input type="checkbox" value={item} onClick={this.moveItem}/></li>
 		})
 
 		return(
