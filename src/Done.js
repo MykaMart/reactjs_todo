@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Done.css';
 
 class Done extends Component {
 
@@ -11,10 +12,10 @@ class Done extends Component {
 			return <li key={i} >{item}<input type="checkbox" onClick={this.moveItem}/></li>
 		})
 		return(
-			<div>
+			<div id="done">
 				<h3> Done </h3>
 					
-				<ul>
+				<ul id="dList">
 					{listItems}
 				</ul>
 			</div>

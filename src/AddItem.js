@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './AddItem.css';
 class AddItem extends Component {
 
 	constructor () {
@@ -30,9 +30,9 @@ class AddItem extends Component {
 	render(){
 
 		return(
-			<div>
+			<div id="add">
 				<form>
-					<h4>Add Item</h4>
+					<h4>Add Item </h4>
 					<input name="inputValue" type="text" placeholder="New Item" onChange={this.handleForm} value={this.state.inputValue}/>
 					<button onClick={this.addItem}>Add Item</button>
 				</form>

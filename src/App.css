@@ -1,28 +1,8 @@
-.App {
-  text-align: center;
+body {
+  background-image: url("http://i.imgur.com/Crc3aff.png");
+  font-family: 'Permanent Marker', cursive;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#bottom {
+  width: 100%;
 }

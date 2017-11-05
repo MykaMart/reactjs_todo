@@ -11,7 +11,9 @@ class App extends Component {
 
     this.state = {
       todo: ["end the universe", "pick up drycleaning", "save morty from worldender"],
-      done: []
+      done: [],
+      tdList: true,
+      dList: false
     }
   }
 
@@ -36,9 +38,11 @@ class App extends Component {
     // console.log(this.state.todo)
     return (
       <div className="App">
-        <ToDo tItems={this.state.todo} move={this.moveItem}/>
-        <AddItem add= {this.addItem}/>
-        <Done dItems={this.state.done}/>
+          <ToDo tItems={this.state.todo} move={this.moveItem}/>
+          <Done dItems={this.state.done}/>
+        <div id="bottom">
+          <AddItem add= {this.addItem}/>
+        </div>
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AddItem from "./AddItem"
+import './ToDo.css';
 
 class ToDo extends Component {
 
@@ -18,7 +18,7 @@ class ToDo extends Component {
 		})
 
 		return(
-			<div>
+			<div id="todo">
 				<h3> To Do </h3>
 					
 				<ul>
